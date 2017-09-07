@@ -221,7 +221,7 @@
 	Configure::write('Session', array(
 		'defaults' => 'php'
 	));
-
+// git
 /**
  * A random string used in security hashing methods.
  */
