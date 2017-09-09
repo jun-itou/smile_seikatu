@@ -7,9 +7,9 @@ class TopsController extends AppController{
 	 public function index() {
 
         // 変数をビューへ渡す
-        $vines_data = array();
+        $vines_data = $this->itemstables->find('all');
         $this->set('vines_data', $vines_data);
-
+        
         $this->render('index');
     }
 }
