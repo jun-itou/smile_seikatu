@@ -71,8 +71,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'password' => 'root',
+		'database' => 'jimsvines_dbtest',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
