@@ -5,9 +5,11 @@ class ItemsController extends AppController{
 	 
 	 public function index() {
 
-		$NewItemData = $this->Items->getItemsNew();
+		$NewItemData          = $this->Items->getItemsNew();
+        $japaneaseVine        = $this->Items->getJapaneaseV();
+        $ForeignCountriesVine = $this->Items->getForeignCountriesV();
 
-        $this->set(compact('NewItemData','allBlogData'));
+        $this->set(compact('NewItemData','allBlogData','japaneaseVine','ForeignCountriesVine'));
         $this->render('index');
 
         if ($this->request->is('post')) {

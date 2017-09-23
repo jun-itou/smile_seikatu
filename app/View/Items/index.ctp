@@ -29,14 +29,15 @@
 
 				<div class="japanese_vin">
 					<p>Japanese VIN's</p>
-					<!-- <ul>
+					<ul>
 						<li class="li">JAP1</li>
 						<li class="li">JAP2</li>
 						<li class="li">JAP3</li>
-					</ul> -->
+					</ul>
 				</div>
 
 				<div class="world_vin">
+				<?php var_dump($ForeignCountriesVine) ?>
 					<p>World VIN's</p>
 					<!-- <ul>
 						<li class="li">W1</li>

@@ -1,7 +1,6 @@
 <?php  
-
-class Items extends Model{
-	public $useTable = 'items';	
+class Masters extends Model{
+	public $useTable = 'items,users,Reviews,Blogs,Orders,OrderLogs';	
 
 	public function getItemsNew() {
 
@@ -89,34 +88,6 @@ class Items extends Model{
 		];
 
 		$limit = 2;
-
-		return $this->find('all',compact('fields','conditions','order','limit'));
-	}
-
-	public function getAllItems(){
-		$fields = [
-			'itemsID',
-			'Name',
-			'Kana',
-			'Tanka',
-			'Tax_rate',
-			'Country',
-			'Material',
-			'Maker',
-			'Category_flg',
-			'Txt',
-			'Img',
-		];
-
-		$conditions = [
-			'delete_flg'   => 1,
-		];
-
-		$order = [
-		    'itemsID' => 'ASC',
-		];
-
-		$limit = 10;
 
 		return $this->find('all',compact('fields','conditions','order','limit'));
 	}
