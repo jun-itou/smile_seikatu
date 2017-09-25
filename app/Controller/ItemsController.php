@@ -1,6 +1,6 @@
 <?php  
 
-class ItemsController extends AppController{
+class TopsController extends AppController{
 	var $uses = ['Items', 'Blogs'];
 	 
 	 public function index() {

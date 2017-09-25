@@ -1,5 +1,6 @@
 <?php
 class MastersController extends AppController{
+
   var $uses = ['items','users','Reviews','Blogs','Orders','OrderLogs'];
     public $helpers = array('Form', 'Html', 'Js', 'Time');
      
@@ -19,6 +20,13 @@ class MastersController extends AppController{
     }
 
     public function itemsMaster(){
+    	$this->loadModel('Items');
     	$allItems = $this->Items->getAllItems();
+    	$this->set(compact('allItems'));
+    	$this->render('itemsMaster');
+    }
+
+    public function createItem(){
+    	
     }
 }

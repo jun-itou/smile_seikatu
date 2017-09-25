@@ -106,6 +106,8 @@ class Items extends Model{
 			'Category_flg',
 			'Txt',
 			'Img',
+			'Modified',
+			'BizDate',
 		];
 
 		$conditions = [

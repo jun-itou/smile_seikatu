@@ -1,15 +1,21 @@
 <?php  
 
 class TopsController extends AppController{
-
-	public $scaffold;
-
+	var $uses = ['Items', 'Blogs'];
+	 
 	 public function index() {
 
-        // 変数をビューへ渡す
-        $vines_data = $this->itemstables->find('all');
-        $this->set('vines_data', $vines_data);
-        
+		$NewItemData          = $this->Items->getItemsNew();
+        $japaneaseVine        = $this->Items->getJapaneaseV();
+        $ForeignCountriesVine = $this->Items->getForeignCountriesV();
+
+        $this->set(compact('NewItemData','allBlogData','japaneaseVine','ForeignCountriesVine'));
         $this->render('index');
+
+        if ($this->request->is('post')) {
+        	$request = $this->request->data;
+
+        }
+
     }
 }
