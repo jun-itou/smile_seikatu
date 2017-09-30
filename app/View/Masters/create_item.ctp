@@ -7,55 +7,60 @@
 	
 </script>
 <body>
+<?=
+	$this->Html->link(
+	                '戻る',
+	                [
+	                	'controller' => 'Masters',
+	                	'action'     => 'itemsMaster',
+	                ]
+	        );
+?>		
 <table>
-<form action="createItem" method="post">
+<?= $this->Form->create('Items', array('type'=>'file', 'enctype' => 'multipart/form-data')); ?>
 	<tr>
 		<th>商品名</th>
-		<td><input type="text" name="name" class="textform" maxlength="32"></td>
+		<td><?= $this->Form->text('Name'); ?></td>
 	</tr>
 	<tr>
 		<th>商品名カナ</th>
-		<td><input type="text" name="name_kana" class="textform" maxlength="32"></td>
+		<td><?= $this->Form->text('Kana'); ?></td>
 	</tr>
 	<tr>
 		<th>価格</th>
-		<td><input type="text" name="price" class="textform" maxlength="10"></td>
+		<td><?= $this->Form->text('Tanka'); ?></td>
 	</tr>
 	<tr>
 		<th>消費税</th>
-		<td><input type="text" name="tax" class="textform" maxlength="10"></td>
+		<td><?= $this->Form->text('Tax_rate'); ?></td>
 	</tr>
 	<tr>
 		<th>産地</th>
-		<td><input type="text" name="country" class="textform" maxlength="50"></td>
+		<td><?= $this->Form->text('Country'); ?></td>
 	</tr>
 	<tr>
 		<th>原材料</th>
-		<td><input type="text" name="material" class="textform" maxlength="255"></td>
+		<td><?= $this->Form->text('Material'); ?></td>
 	</tr>
 	<tr>
 		<th>メーカー</th>
-		<td><input type="text" name="maker" class="textform" maxlength="255"></td>
+		<td><?= $this->Form->text('Maker'); ?></td>
 	</tr>
 	<tr>
 		<th>カテゴリー</th>
-		<td>
-			<select name="category">
-				<option value="">選択してください</option>
-				<option value= "1">国産</option> 
-				<option value= "2">外国産</option>
-			</select>
+		<td><?= $this->Form->select('Category_flg',[1=>'国産',2=>'外国産'],['empty'=>'選択してください']); ?>
 		</td>
 	</tr>
 	<tr>
 		<th>商品詳細</th>
-		<td><textarea name="name" cols="40" rows="4" maxlength="800" class="textform"></textarea></td>
+		<td><?= $this->Form->textarea('Txt'); ?></td>
 	</tr>
 	<tr>
 		<th>商品画像</th>
 		<td>
-			<input type="text" name="name">
-			<?php echo $this->Form->input('Post.image', array('label' => false, 'type' => 'file', 'multiple')); ?>
+			<?=
+				$this->Form->input('Img_data', array('label' => false, 'type' => 'file', 'multiple'));
+			?>
 		</td>
 	</tr>
 	<tr>

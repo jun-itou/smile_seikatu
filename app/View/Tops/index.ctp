@@ -29,19 +29,19 @@
 				<div class="japanese_vin">
 					<p>Japanese VIN's</p>
 					<ul>
-						<li class="li">JAP1</li>
-						<li class="li">JAP2</li>
-						<li class="li">JAP3</li>
+					<?php foreach ($japaneaseVine as $key => $value) :?>
+						<li class="li"><?= $value['Items']['Name'] ?></li>
+						<?php endforeach ?>
 					</ul>
 				</div>
 
 				<div class="world_vin">
 					<p>World VIN's</p>
-					<!-- <ul>
-						<li class="li">W1</li>
-						<li class="li">W2</li>
-						<li class="li">W3</li>
-					</ul> -->
+					<ul>
+					<?php foreach ($ForeignCountriesVine as $key => $value): ?>
+						<li class="li"><?= $value['Items']['Name'] ?></li>
+						<?php endforeach ?>
+					</ul>
 				</div>
 
 				<div class="recipe">

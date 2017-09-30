@@ -16,7 +16,8 @@
 		$this->Html->link(
 		                '新規登録',
 		                [
-		                	'action'     => 'create_item.ctp',
+		                	'controller' => 'Masters',
+		                	'action'     => 'createItem',
 		                ]
 		        );
 		?>
@@ -42,6 +43,6 @@
 	</tr>
 	<?php endforeach?>
 </table>
-
+<img src="<?= DS.'smile_seikatu'.DS.'product'.DS.'japanese'.DS.'miyasato.png'?>">
 </body>
 </html>
