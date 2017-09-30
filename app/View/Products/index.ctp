@@ -21,17 +21,15 @@
         <th>種類</th>
     </tr>
 
-    <!-- <?php //var_dump($product); ?>
-    exit; -->
     <?php foreach ($products as $product):?>
      <tr>
-        <td> <?= $product['Product']["ItemsID"] ;?> </td>
-        <td> <?= $product['Product']["Items_kanji"] ;?> </td>
-        <td> <?= $product['Product']["Items_kana"] ;?> </td>
-        <td> <?= $product['Product']["Items_tanka"] ;?> </td> 
-        <td> <?= $product['Product']["Itemstax_rate"] ;?> </td>
-        <td> <?= $product['Product']["ItemsCountry"] ;?> </td>
-        <td> <?= $product['Product']["ItemsMaterial"] ;?> </td>
+        <td> <?= $product['Product']["itemsID"] ;?> </td>
+        <td> <?= $product['Product']["Name"] ;?> </td>
+        <td> <?= $product['Product']["Kana"] ;?> </td>
+        <td> <?= $product['Product']["Tanka"] ;?> </td> 
+        <td> <?= $product['Product']["Tax_rate"] ;?> </td>
+        <td> <?= $product['Product']["Country"] ;?> </td>
+        <td> <?= $product['Product']["Material"] ;?> </td>
     </tr>
     
     <?php endforeach ; ?> 

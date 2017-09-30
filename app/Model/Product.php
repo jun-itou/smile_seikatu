@@ -3,6 +3,6 @@
 * 
 */
 class Product extends AppModel{
-  public $useTable = 'itemstables';
+  public $useTable = 'items';
  }
 ?>
