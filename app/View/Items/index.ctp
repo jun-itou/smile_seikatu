@@ -5,6 +5,9 @@
 		<meta charset="utf-8">
 		<title>酢まいる生活</title>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fed55cce47cb1b00751bc0b4cf12782a27b1fe65
 		<link rel="stylesheet" type="reset/css" href="./css/reset.css">
 		<link rel="stylesheet" type="text/css" href="./css/top.css">
 	</head>
@@ -45,6 +48,8 @@
                             </div>
                         <?endforeach?>
                 </div>
+<<<<<<< HEAD
+=======
 =======
 		<link rel="stylesheet" type="reset/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="TOP.css">
@@ -69,6 +74,7 @@
 					<?endforeach?>
 				</div>
 >>>>>>> 213d44571ac5a464e814f4c0a8e3647a86926c5a
+>>>>>>> fed55cce47cb1b00751bc0b4cf12782a27b1fe65
 
 				<div class="japanese_vin">
 					<p>Japanese VIN's</p>
@@ -116,6 +122,9 @@
 			</main>
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fed55cce47cb1b00751bc0b4cf12782a27b1fe65
     <!---  フッター                           -->
         <footer>
             <ul id="foot-logo">
@@ -139,12 +148,15 @@
             <p>Copyright © 2017 JimsVINES All Rights Reserved.</p>
          </address>
         <!---  ./フッター            終了               -->
+<<<<<<< HEAD
+=======
 =======
 			<footer>
 				
 			</footer>
 
 >>>>>>> 213d44571ac5a464e814f4c0a8e3647a86926c5a
+>>>>>>> fed55cce47cb1b00751bc0b4cf12782a27b1fe65
 		</div>
 	</body>
 </html>

@@ -1,7 +1,14 @@
 <?php  
 
+<<<<<<< HEAD
 class ItemsController extends AppController{
     var $uses = ['Items', 'Blogs'];
+=======
+class TopsController extends AppController{
+	var $uses = ['Items', 'Blogs'];
+	 
+	 public function index() {
+>>>>>>> master
 
     public function index() {
 
