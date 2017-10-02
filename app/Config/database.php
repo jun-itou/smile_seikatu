@@ -63,18 +63,18 @@
  *
  * flags =>
  * A key/value array of driver specific connection options.
- */
+ *///////
 class DATABASE_CONFIG {
 
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'host' => 'mysql3005.xserver.jp',
+		'login' => 'jimsvines_admin',
+		'password' => 'SMILEseikatsu555',
+		'database' => 'jimsvines_dbtest',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 
 	public $test = array(
